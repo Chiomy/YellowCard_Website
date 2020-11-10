@@ -93,7 +93,7 @@
   margin: 0 auto;
 }
 
-.crypto1 {
+.crypto-img {
   width: 50%;
   margin: 0 auto;
 }
@@ -116,10 +116,25 @@
 
   .online {
     margin-bottom: 0;
-    margin-right: 10px;
+    margin-right: 5px;
   }
 
   .agent {
-    margin-right: 10px;
+    margin-left: 5px;
+  }
+
+  .crypto {
+    display: flex;
+    align-items: center;
+  }
+
+  .crypto-text {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .crypto-img {
+    width: 60%;
+    margin: 0 auto;
   }
 }
