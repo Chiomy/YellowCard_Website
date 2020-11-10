@@ -61,6 +61,22 @@
 
 /* main */
 
+.store-h1 {
+  font-size: 1.8rem;
+}
+
+.bitButton,
+.bitMerchant {
+  /* width: 35%; */
+  /* min-height: 42px; */
+  font-size: 0.8571rem;
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.bitButton {
+  background-color: var(--yellow);
+}
+
 @media screen and (max-width: 599px) {
   .navList,
   .navList-ul {
