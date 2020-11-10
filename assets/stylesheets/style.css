@@ -67,14 +67,35 @@
 
 .bitButton,
 .bitMerchant {
-  /* width: 35%; */
-  /* min-height: 42px; */
   font-size: 0.8571rem;
   box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
 }
 
 .bitButton {
   background-color: var(--yellow);
+}
+
+.containerBitcoin {
+  margin-top: 8rem;
+}
+
+.showcase {
+  padding-top: 6rem;
+}
+
+.online {
+  background-color: #fff6db;
+  margin: 0 auto 1rem auto;
+}
+
+.agent {
+  background-color: #f4f4f4;
+  margin: 0 auto;
+}
+
+.crypto1 {
+  width: 50%;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 599px) {
@@ -87,5 +108,18 @@
 @media screen and (min-width: 600px) {
   .menu-items {
     display: none;
+  }
+
+  .showcase {
+    display: flex;
+  }
+
+  .online {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+
+  .agent {
+    margin-right: 10px;
   }
 }
