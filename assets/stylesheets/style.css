@@ -151,6 +151,47 @@
   padding: 10px;
 }
 
+.bitcoin-div {
+}
+
+.bitcoin-img-wrap {
+  width: 60%;
+}
+
+.earn-button {
+  background-color: var(--yellow);
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.yellow-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* justify-items: center; */
+}
+
+.yellow-img {
+  width: 21%;
+}
+
+.company-list,
+.product-list,
+.support-list,
+.community-list {
+  /* padding-left: 20px; */
+  list-style: none;
+}
+
+.company,
+.products,
+.support,
+.community {
+  font-size: 16px;
+}
+
+.yellow-li {
+  font-size: 18px;
+}
+
 @media screen and (max-width: 599px) {
   .navList,
   .navList-ul {
@@ -209,8 +250,6 @@
 
 @media screen and (min-width: 601px) {
   .reason {
-    /* display: grid; */
-    /* grid-template-columns: repeat(3, 1fr); */
     align-items: stretch;
   }
 }
