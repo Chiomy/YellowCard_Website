@@ -95,7 +95,32 @@
 
 .crypto-img {
   width: 50%;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+}
+
+.crypto-title {
+  font-size: 20px;
+}
+
+.crypto-para {
+  line-height: 2;
+}
+
+.card {
+  box-shadow: 0 8px 24px rgba(44, 49, 52, 0.1),
+    0 16px 32px rgba(44, 49, 52, 0.08);
+  border-radius: 15px;
+  width: 93%;
+}
+
+/* .table {
+  border-radius: 30px;
+  border: 5px solid rgba(0, 128, 255, 0.9) !important; */
+/* } */
+
+.table .th,
+.table .td {
+  border-top: 1px solid #f4f5f5;
 }
 
 @media screen and (max-width: 599px) {
@@ -128,13 +153,22 @@
     align-items: center;
   }
 
+  .crypto1,
+  .crypto2 {
+    width: 50%;
+  }
+
   .crypto-text {
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
   }
 
   .crypto-img {
     width: 60%;
     margin: 0 auto;
+  }
+
+  .card {
+    width: 80%;
   }
 }
