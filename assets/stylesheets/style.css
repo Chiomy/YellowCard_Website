@@ -123,6 +123,10 @@
   border-top: 1px solid #f4f5f5;
 }
 
+.best-price {
+  margin-bottom: 80px;
+}
+
 .reason {
   width: 93%;
 }
@@ -151,18 +155,21 @@
   padding: 10px;
 }
 
-.bitcoin-div {
-}
-
 .bitcoin-img-wrap {
-  width: 60%;
+  width: 50%;
 }
 
 .wrap {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: center; */
   margin-bottom: 50px;
+}
+
+.agent-signup {
+  margin: 170px 0;
+}
+
+.earn-button1 {
+  background-color: var(--yellow);
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
 }
 
 .earn-button {
@@ -347,9 +354,33 @@
 }
 
 @media screen and (min-width: 960px) {
+  .reason {
+    width: 70%;
+  }
+
   .wrap {
     display: flex;
     justify-content: center;
+  }
+
+  .earn {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .bitcoin-img-wrap {
+    width: 70%;
+  }
+
+  .agent-signup {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .bitcoin-div,
+  .bitcoin-signup {
+    width: 50%;
   }
 
   .earn-button {
