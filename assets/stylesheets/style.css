@@ -113,10 +113,11 @@
   width: 93%;
 }
 
-/* .table {
-  border-radius: 30px;
-  border: 5px solid rgba(0, 128, 255, 0.9) !important; */
-/* } */
+.table-section {
+  padding-top: 150px;
+  padding-bottom: 100px;
+  margin-bottom: 100px;
+}
 
 .table .th,
 .table .td {
@@ -354,6 +355,10 @@
 }
 
 @media screen and (min-width: 960px) {
+  .card {
+    width: 70%;
+  }
+
   .reason {
     width: 70%;
   }
