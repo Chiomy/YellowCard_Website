@@ -34,11 +34,11 @@
   background-color: var(--yellow);
   color: var(--white);
   font-size: 1rem;
-  /* padding: 5px; */
 }
 
 .scammer-info {
-  width: 333px;
+  max-width: 336px;
+  margin: 0 auto;
 }
 
 .warn {
@@ -61,8 +61,32 @@
 
 /* main */
 
+.store {
+  padding-top: 10rem;
+}
+
+.waka {
+  /* width: 100%; */
+}
+
+.store-img {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.store-text-child {
+  width: 70%;
+  margin: 0 auto;
+}
+
 .store-h1 {
-  font-size: 1.8rem;
+  font-size: 2rem;
+}
+
+.yellow-bit-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .bitButton,
@@ -96,9 +120,13 @@
   margin: 0 auto;
 }
 
+.crypto {
+  margin-bottom: 80px;
+}
+
 .crypto-img {
   width: 50%;
-  /* margin: 0 auto; */
+  margin: 0 auto;
 }
 
 .crypto-title {
@@ -287,6 +315,10 @@ tbody td {
 }
 
 @media screen and (min-width: 600px) {
+  .scammer-info {
+    margin: unset;
+  }
+
   .menu-items {
     display: none;
   }
@@ -299,10 +331,12 @@ tbody td {
   .online {
     margin-bottom: 0;
     margin-right: 5px;
+    width: 50%;
   }
 
   .agent {
     margin-left: 5px;
+    width: 50%;
   }
 
   .crypto {
@@ -321,8 +355,8 @@ tbody td {
   }
 
   .crypto-img {
-    width: 60%;
-    margin: 0 auto;
+    /* width: 50%; */
+    /* margin: 0 auto; */
   }
 
   .card {
@@ -355,6 +389,13 @@ tbody td {
 }
 
 @media screen and (min-width: 601px) {
+  .scammer-info {
+    max-width: 100%;
+    font-size: 12px;
+    text-align: center;
+    line-height: 1;
+  }
+
   .reason {
     align-items: stretch;
   }
@@ -399,7 +440,7 @@ tbody td {
   }
 
   .bitcoin-img-wrap {
-    width: 70%;
+    width: 55%;
   }
 
   .agent-signup {
@@ -448,5 +489,12 @@ tbody td {
 
   .div-submit {
     width: unset;
+  }
+}
+
+@media screen and (min-width: 961px) {
+  .scammer-info {
+    font-size: 16px;
+    line-height: initial;
   }
 }
