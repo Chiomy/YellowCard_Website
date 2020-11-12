@@ -124,6 +124,13 @@
   border-top: 1px solid #f4f5f5;
 }
 
+tbody th {
+  /* width: 12%; */
+}
+
+tbody td {
+}
+
 .best-price {
   margin-bottom: 80px;
 }
@@ -405,7 +412,7 @@
   }
 
   .yellow-company {
-    justify-self: end;
+    /* justify-self: end; */
   }
 
   .footer-section {
@@ -414,10 +421,12 @@
   }
 
   .footer2 {
-    width: 92%;
+    /* width: 92%; */
+    width: 100%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-template-columns: 1fr repeat(2, 22%) 1fr;
     grid-auto-rows: auto;
   }
 
