@@ -276,7 +276,7 @@
 
 @media screen and (min-width: 960px) {
   .yellow-info {
-    grid-template-columns: 1fr 22% 22% 1fr;
+    grid-template-columns: 1fr repeat(2, 22%) 1fr;
   }
 
   .yellow-company {
@@ -289,8 +289,14 @@
   }
 
   .footer2 {
+    width: 90%;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: auto;
+  }
+
+  .yellow-form {
+    grid-column: 3 / 5;
   }
 }
