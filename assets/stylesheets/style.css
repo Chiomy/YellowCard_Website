@@ -275,6 +275,10 @@
 }
 
 @media screen and (min-width: 960px) {
+  .footer-container {
+    background-color: #fffaec;
+  }
+
   .yellow-info {
     grid-template-columns: 1fr repeat(2, 22%) 1fr;
   }
@@ -283,13 +287,13 @@
     justify-self: end;
   }
 
-  .footer {
+  .footer-section {
     width: 75%;
     margin: 0 auto;
   }
 
   .footer2 {
-    width: 90%;
+    width: 92%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
