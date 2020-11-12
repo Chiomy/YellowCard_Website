@@ -158,9 +158,21 @@
   width: 60%;
 }
 
+.wrap {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  margin-bottom: 50px;
+}
+
 .earn-button {
   background-color: var(--yellow);
   box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+  width: 150px;
+  /* height: 49px; */
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 8px;
 }
 
 .yellow-info {
@@ -170,7 +182,11 @@
 }
 
 .yellow-img {
-  width: 21%;
+  width: 150px;
+  /* height: 49px; */
+  display: block;
+  margin: 0 auto;
+  margin-top: 8px;
 }
 
 .company-list,
@@ -203,13 +219,39 @@
   width: 150px;
 }
 
-.yellow-input {
+.yellow-input[placeholder='name@example.com'] {
+  text-align: center;
 }
 
 .yellow-button {
   background-color: var(--yellow);
   box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
     0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.footer-container {
+  background-color: #fffaec;
+}
+
+.yellow-input:focus {
+  outline: 0;
+}
+
+.yellow-input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 13px;
+  border-radius: 30px;
+}
+
+.yellow-button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.div-submit {
+  border-radius: 30px;
 }
 
 @media screen and (max-width: 599px) {
@@ -266,17 +308,60 @@
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
   }
+
+  .submit {
+    display: flex;
+  }
+
+  .yellow-input {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 0;
+  }
+
+  .yellow-button {
+    padding: 9px;
+  }
+
+  .div-submit {
+    width: 30%;
+  }
 }
 
 @media screen and (min-width: 601px) {
   .reason {
     align-items: stretch;
   }
+
+  .div-submit {
+    padding: 8px;
+    background-color: white;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .yellow-input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
 }
 
 @media screen and (min-width: 960px) {
-  .footer-container {
-    background-color: #fffaec;
+  .wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  .earn-button {
+    width: 150px;
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+
+  .yellow-img {
+    width: 150px;
+    margin-left: 10px;
+    margin-top: 0;
   }
 
   .yellow-info {
@@ -302,5 +387,9 @@
 
   .yellow-form {
     grid-column: 3 / 5;
+  }
+
+  .div-submit {
+    width: unset;
   }
 }
