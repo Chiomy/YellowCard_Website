@@ -83,6 +83,107 @@
   font-size: 2rem;
 }
 
+/*Animation*/
+.boxes {
+  position: absolute;
+  background-color: var(--white);
+  z-index: -1;
+  left: 260px;
+  top: 0px;
+  display: none;
+  /* padding-right: 50px;
+  margin: 0 auto; */
+  /* text-align: center; */
+}
+
+.card-img1 {
+  height: 450px;
+  width: 350px;
+  background-color: var(--bright-yellow);
+  z-index: 2;
+  animation-fill-mode: forwards;
+  transition-timing-function: ease-in;
+  animation-name: bend1;
+  animation-duration: 3s;
+}
+
+.card-img2 {
+  height: 450px;
+  width: 350px;
+  background-color: var(--dark-yellow);
+  z-index: 2;
+  position: relative;
+  /* top: -150px; */
+  margin-top: -450px;
+  animation-fill-mode: forwards;
+  transition-timing-function: ease-in;
+  animation-name: bend2;
+  animation-duration: 3s;
+}
+
+.card-img3 {
+  height: 450px;
+  width: 350px;
+  background-color: var(--yellow);
+  position: relative;
+  margin-top: -450px;
+  /* top: -300px; */
+  z-index: 2;
+  animation-fill-mode: forwards;
+  transition-timing-function: ease-in;
+  animation-name: bend3;
+  animation-duration: 3s;
+}
+
+@keyframes bend1 {
+  0% {
+    transform: rotate(0);
+    transform-origin: 30% 30%;
+  }
+  to {
+    transform: rotate(-75deg);
+    transform-origin: 30% 60%;
+  }
+}
+
+@keyframes bend2 {
+  0% {
+    transform: rotate(0);
+    transform-origin: 30% 30%;
+  }
+  to {
+    transform: rotate(-70deg);
+    transform-origin: 30% 57%;
+  }
+}
+
+@keyframes bend3 {
+  0% {
+    transform: rotate(0);
+    transform-origin: 30% 30%;
+  }
+  to {
+    transform: rotate(-65deg);
+    transform-origin: 30% 55%;
+  }
+}
+
+.hero {
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.waka {
+  width: 450px;
+}
+
+/* Buy Bit */
+.buyBit {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 50px;
+}
+
 .yellow-bit-container {
   max-width: 1000px;
   margin: 0 auto;
@@ -215,7 +316,6 @@ tbody td {
   background-color: var(--yellow);
   box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
   width: 150px;
-  /* height: 49px; */
   display: block;
   margin: 0 auto;
   margin-bottom: 8px;
@@ -229,7 +329,6 @@ tbody td {
 
 .yellow-img {
   width: 150px;
-  /* height: 49px; */
   display: block;
   margin: 0 auto;
   margin-top: 8px;
@@ -300,13 +399,6 @@ tbody td {
   border-radius: 30px;
 }
 
-/* @media screen and (min-width: 348px) {
-  .showcase {
-    max-width: 348px;
-    margin: 0 auto;
-  }
-} */
-
 @media screen and (max-width: 599px) {
   .navList,
   .navList-ul {
@@ -315,6 +407,10 @@ tbody td {
 }
 
 @media screen and (min-width: 600px) {
+  .boxes {
+    display: block;
+  }
+
   .scammer-info {
     margin: unset;
   }
